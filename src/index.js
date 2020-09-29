@@ -1,2 +1,3 @@
-const content = document.getElementById("content");
-content.innerText = "somoye";
+import eventListeners from "./eventListeners";
+
+eventListeners();
