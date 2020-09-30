@@ -3,6 +3,7 @@
 html {
   height: 100%;
 }
+
 body {
   margin-top: 0;
   margin-bottom: 0;
@@ -59,13 +60,16 @@ form {
       width: 50%;
       border-radius: 10px;
     }
+
     > input {
       display: none;
+
       &[type="radio"]:checked + label {
         background-color: rgb(107, 141, 100);
       }
     }
   }
+
   button[type="submit"] {
     margin: 5px;
     font-size: 30px;
@@ -87,7 +91,6 @@ form {
 
   @media (max-width: 1000px) {
     grid-template-columns: repeat(2, 1fr);
-
     grid-template-areas:
       "city city "
       "description description "
@@ -147,6 +150,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 .wind-container {
   /* flex-direction: column; */
   display: block;
@@ -190,6 +194,7 @@ form {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translate(-50%, -50%) rotate(360deg);
   }
@@ -199,6 +204,7 @@ form {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
+
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
