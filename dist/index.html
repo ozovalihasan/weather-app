@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
+    <title>WEATHER</title>
   </head>
   <body>
     <div id="content">
       <form id="search">
         <label for="city"></label>
-        <input type="text" name="city" id="city" placeholder="city" />
+        <input
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Can you input a city?"
+        />
 
+        <div id="unit">
+          <div class="unit-container">
+            <input type="radio" id="metric" name="unit" value="metric" />
+            <label for="metric" id="metricLabel">Metric (°C) </label>
+            <input type="radio" id="imperial" name="unit" value="imperial" />
+            <label for="imperial" id="imperialLavel">Imperial (K)</label>
+          </div>
+        </div>
         <button type="submit">Show</button>
       </form>
       <div class="results" id="results"></div>
+      <div class="loader loader-container d-none"></div>
     </div>
     <script src="main.js"></script>
   </body>
