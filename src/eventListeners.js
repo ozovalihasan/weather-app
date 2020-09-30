@@ -12,8 +12,6 @@ const eventListeners = () => {
   const searchForm = () => document.getElementById('search');
   searchForm().addEventListener('submit', (event) => {
     event.preventDefault();
-    pageStructure.showLoader();
-
     const city = searchForm().elements.namedItem('city').value;
     const unit = searchForm().elements.namedItem('unit').value;
     storage.setUnit(unit);
@@ -21,6 +19,8 @@ const eventListeners = () => {
       alert('Please fill in the blank used for city');
     } else {
       (async () => {
+        pageStructure.showLoader();
+
         try {
           const result = await getInformation(city, unit);
           if (result.cod === '404') {
@@ -31,9 +31,9 @@ const eventListeners = () => {
         } catch (error) {
           alert(error);
         }
+        pageStructure.removeLoader();
       })();
     }
-    pageStructure.removeLoader();
   });
 };
 
