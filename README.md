@@ -42,7 +42,7 @@ Please [check](https://rawcdn.githack.com/ozovalihasan/weather-app/c5adf246fc184
 
 Then,
 
-- Run `npm run build`
+- Run `npm run start`
 - Open your browser and go to 'http://localhost:8080' and open 'dist' folder
 
 ## Authors
