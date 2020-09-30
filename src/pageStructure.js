@@ -5,6 +5,17 @@ import "@fortawesome/fontawesome-free/js/brands";
 import storage from "./localStorageOperations";
 
 const PageStructure = () => {
+  const showLoader = () => {
+    const results = document.getElementById("results");
+    while (results.lastChild) {
+      results.removeChild(results.lastChild);
+    }
+
+    const loader = document.getElementsByClassName("loader-container")[0];
+    loader.classList.add("loader");
+    loader.classList.remove("d-none");
+  };
+
   const showResults = (weatherCondition) => {
     const backgroundImages = {
       "01d":
@@ -136,7 +147,12 @@ const PageStructure = () => {
     const loader = document.getElementsByClassName("loader-container")[0];
   };
 
-  return { showResults };
+  const removeLoader = () => {
+    const loader = document.getElementsByClassName("loader-container")[0];
+    loader.classList.remove("loader");
+  };
+
+  return { showResults, showLoader, removeLoader };
 };
 
 export default PageStructure();
