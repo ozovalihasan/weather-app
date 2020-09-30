@@ -58,6 +58,15 @@ const PageStructure = () => {
       document.body.style.backgroundImage = `url(
       ${backgroundImages[weatherCondition.weather[0].icon]}
       )`;
+
+      const content = document.getElementById('content');
+      content.classList = '';
+
+      if (weatherCondition.weather[0].icon.includes('d')) {
+        content.classList.add('bg-day');
+      } else {
+        content.classList.add('bg-nigth');
+      }
     } else {
       document.body.style.backgroundImage = `url(
         ${backgroundImages.default}

@@ -24,7 +24,6 @@ body {
 #content {
   width: 100%;
   margin: 0 auto 20px;
-  background-color: #ffffff96;
   text-align: center;
 }
 
@@ -74,6 +73,24 @@ form {
     margin: 5px;
     font-size: 30px;
     width: 400px;
+  }
+}
+
+.bg-day {
+  background-color: #24242496;
+  color: #fcfcfc;
+
+  .unit-container {
+    color: #000;
+  }
+}
+
+.bg-nigth {
+  background-color: #fcfcfc96;
+  color: #242424;
+
+  .unit-container {
+    color: #000;
   }
 }
 
