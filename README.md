@@ -8,7 +8,7 @@
 
 > Weather App!
 
-![weather-screenshot](./assets/screenshot-project.jpg)
+![weather-screenshot](./assets/screenshot-project.png)
 
 ## Description
 
