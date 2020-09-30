@@ -1,7 +1,3 @@
-import '@fortawesome/fontawesome-free/js/fontawesome';
-import '@fortawesome/fontawesome-free/js/solid';
-import '@fortawesome/fontawesome-free/js/regular';
-import '@fortawesome/fontawesome-free/js/brands';
 import storage from './localStorageOperations';
 
 const PageStructure = () => {
@@ -92,7 +88,7 @@ const PageStructure = () => {
     resultsContainer.classList.add('results-container');
     resultsContainer.innerHTML = `
     <div id="city">
-      <i class="fas fa-map-marker-alt"></i> ${weatherCondition.name.toUpperCase()}
+       ${weatherCondition.name.toUpperCase()}
     </div>
     <div id="description">
       ${weatherCondition.weather[0].description.toUpperCase()}
