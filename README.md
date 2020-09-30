@@ -31,7 +31,7 @@ A weather API is used to get informations.
 
 ## Live demo
 
-Please [check](https://raw.githack.com/ozovalihasan/weather-app/main-parts/dist/index.html).
+Please [check](https://rawcdn.githack.com/ozovalihasan/weather-app/c5adf246fc184d015a934840f45c275a8d737d03/dist/index.html).
 
 ## Setup
 
